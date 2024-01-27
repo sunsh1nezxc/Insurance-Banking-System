@@ -62,7 +62,7 @@ public class Database
     public static boolean checkIfPersonExists(String findStr)
     {
         Connection con = dbConnection();
-        String query = "SELECT * FROM Users WHERE id = ?";
+        String query = "SELECT * FROM User WHERE id = ?";
         try {
             PreparedStatement preparedStatement = con.prepareStatement(query);
             preparedStatement.setString(1, findStr);
