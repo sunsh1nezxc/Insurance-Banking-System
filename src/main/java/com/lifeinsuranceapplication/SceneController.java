@@ -40,11 +40,7 @@ public class SceneController {
         stage.setScene(scene);
         stage.show();
     }
-<<<<<<< HEAD
-=======
-
     public void loginCheck(ActionEvent actionEvent) {
         System.out.print(Database.checkLoginPassword(loginField.getText(), passwordField.getText()));
     }
->>>>>>> 154c8c419a51365e12e8068eef011b62d38deaf0
 }
