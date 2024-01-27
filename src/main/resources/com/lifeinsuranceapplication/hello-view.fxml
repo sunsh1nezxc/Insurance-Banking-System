@@ -63,6 +63,70 @@
                   <Font name="Arial Bold" size="16.0" />
                </font>
             </Button>
+            <Button fx:id="nazadButton" layoutX="-3.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: #ffffff;" text="&lt;">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="RegisterPage" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="736.0" prefWidth="368.0" style="-fx-background-color: #ffffff;" visible="false">
+         <children>
+            <Button fx:id="loginBtn1" layoutX="14.0" layoutY="550.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="340.0" style="-fx-background-color: #008a17;" text="Зарегистрироваться" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <TextField fx:id="IINReg" layoutX="14.0" layoutY="149.0" prefHeight="45.0" prefWidth="340.0" promptText="ИИН">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Label fx:id="labelVhodTxt1" layoutX="15.0" layoutY="109.0" text="Выполните регистрацию">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="LabelAutorization1" layoutX="14.0" layoutY="71.0" text="Регистрация ">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <TextField fx:id="phoneNumberL" layoutX="14.0" layoutY="202.0" prefHeight="45.0" prefWidth="340.0" promptText="Номер телефона">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="lasrName" layoutX="15.0" layoutY="255.0" prefHeight="45.0" prefWidth="340.0" promptText="Фамилия">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="firstName" layoutX="15.0" layoutY="311.0" prefHeight="45.0" prefWidth="340.0" promptText="Имя">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="ot4estvo" layoutX="15.0" layoutY="368.0" prefHeight="45.0" prefWidth="340.0" promptText="Отчество">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Button fx:id="nazadButtonDva" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: #ffffff;" text="&lt;">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
+            <TextField fx:id="vvodParol" layoutX="15.0" layoutY="423.0" prefHeight="45.0" prefWidth="340.0" promptText="Введите пароль">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="vvodParolDva" layoutX="15.0" layoutY="477.0" prefHeight="45.0" prefWidth="340.0" promptText="Повторите пароль">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
          </children>
       </AnchorPane>
    </children>

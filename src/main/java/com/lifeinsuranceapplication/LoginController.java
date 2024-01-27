@@ -6,19 +6,31 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.control.CheckBox;
+
 public class LoginController {
     @FXML
     private CheckBox checkPassword;
-
     @FXML
     private Button loginBtn;
-
     @FXML
     private TextField loginField;
-
     @FXML
     private AnchorPane mainPanel;
-
     @FXML
     private PasswordField passwordField;
+    @FXML
+    private Button registationButton;
+    @FXML
+    private AnchorPane RegisterPage;
+
+    @FXML
+    public void initialize() {
+
+    }
+
+    @FXML
+    private void handleRegistrationButtonAction() {
+        mainPanel.setVisible(false);
+        RegisterPage.setVisible(true);
+    }
 }
