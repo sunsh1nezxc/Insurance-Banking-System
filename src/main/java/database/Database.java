@@ -58,6 +58,24 @@ public class Database
         }
     }
 
+    public static boolean checkIfPersonExists(String findStr)
+    {
+        Connection con = dbConnection();
+        String query = "SELECT * FROM AuthorizedUsers WHERE id = ?";
+        try {
+            PreparedStatement preparedStatement = con.prepareStatement(query);
+            preparedStatement.setString(1, findStr);
+            ResultSet rs = preparedStatement.executeQuery();
+
+            return rs.next();
+
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
+        }
+
+        return false;
+    }
+
     public static boolean checkIfUserExists(String findStr)
     {
         Connection con = dbConnection();

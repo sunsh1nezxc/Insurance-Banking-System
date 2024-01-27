@@ -45,13 +45,17 @@ public class SceneController {
     private TextField phoneNumberL;
 
     public void register(ActionEvent actionEvent) {
-        if(passwordRegisterField.getText() != passwordRegisterFieldRepeat.getText()){
+        if(!passwordRegisterField.getText().equals(passwordRegisterFieldRepeat.getText())){
             statusLabel.setText("Пароли не совпадают");
         }
         else{
-            if(Database.checkIfUserExists(IINReg.getText()) == true)
+            if(Database.checkIfUserExists(IINReg.getText()))
             {
                 statusLabel.setText("Такой ИИН уже зарегистрирован");
+            }
+            if(Database.checkIfPersonExists(IINReg.getText()))
+            {
+                statusLabel.setText("ИИН неверный");
             }
             else Database.newUserRegister(IINReg.getText(), passwordRegisterField.getText(), phoneNumberL.getText());
         }
