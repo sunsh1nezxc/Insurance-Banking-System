@@ -32,29 +32,29 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="177.0" layoutY="488.0" text="Зарегистрируйтесь" textFill="#25862a">
-         <font>
-            <Font name="Arial Bold" size="16.0" />
-         </font>
-      </Label>
-      <Label layoutX="14.0" layoutY="216.0" text="Выполните вход в аккаунт">
+      <Label fx:id="labelVhodTxt" layoutX="14.0" layoutY="216.0" text="Выполните вход в аккаунт">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="15.0" layoutY="163.0" text="Авторизация">
+      <Label fx:id="LabelAutorization" layoutX="15.0" layoutY="163.0" text="Авторизация">
          <font>
             <Font name="System Bold" size="26.0" />
          </font>
       </Label>
-      <Button layoutX="13.0" layoutY="83.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="172.0" style="-fx-background-color: #008a17;" text="Физ. лицо" textFill="WHITE">
+      <Button fx:id="FirlicoButton" layoutX="13.0" layoutY="83.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="172.0" style="-fx-background-color: #008a17;" text="Физ. лицо" textFill="WHITE">
          <font>
             <Font size="15.0" />
          </font>
       </Button>
-      <Button layoutX="184.0" layoutY="83.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="180.0" style="-fx-background-color: #008a17;" text="Юр. лицо" textFill="WHITE">
+      <Button fx:id="UrLicoButton" layoutX="184.0" layoutY="83.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="180.0" style="-fx-background-color: #008a17;" text="Юр. лицо" textFill="WHITE">
          <font>
             <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="registationButton" layoutX="167.0" layoutY="483.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Зарегистрироваться" textFill="#008a17">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
          </font>
       </Button>
    </children>
