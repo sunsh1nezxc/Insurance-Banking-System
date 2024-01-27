@@ -22,15 +22,4 @@ public class LoginController {
     private Button registationButton;
     @FXML
     private AnchorPane RegisterPage;
-
-    @FXML
-    public void initialize() {
-
-    }
-
-    @FXML
-    private void handleRegistrationButtonAction() {
-        mainPanel.setVisible(false);
-        RegisterPage.setVisible(true);
-    }
 }
