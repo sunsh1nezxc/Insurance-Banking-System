@@ -54,7 +54,6 @@ public class Database
             preparedStatement.setString(3, phoneNumber);
             preparedStatement.execute();
             System.out.println("User added successfully");
-            return;
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
@@ -63,7 +62,7 @@ public class Database
     public static boolean checkIfPersonExists(String findStr)
     {
         Connection con = dbConnection();
-        String query = "SELECT * FROM AuthorizedUsers WHERE id = ?";
+        String query = "SELECT * FROM Users WHERE id = ?";
         try {
             PreparedStatement preparedStatement = con.prepareStatement(query);
             preparedStatement.setString(1, findStr);
@@ -81,7 +80,7 @@ public class Database
     public static boolean checkIfUserExists(String findStr)
     {
         Connection con = dbConnection();
-        String query = "SELECT * FROM User WHERE id = ? or phoneNumber = ?";
+        String query = "SELECT * FROM AuthorizedUsers WHERE id = ? or phoneNumber = ?";
         try {
             PreparedStatement preparedStatement = con.prepareStatement(query);
             preparedStatement.setString(1, findStr);
