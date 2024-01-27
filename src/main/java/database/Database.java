@@ -6,11 +6,14 @@ public class Database
 {
     protected static Connection dbConnection()
     {
+        String os = System.getProperty("os.name").toLowerCase();
         Connection connection = null;
         try
         {
             Class.forName("org.sqlite.JDBC");
-            connection = DriverManager.getConnection("jdbc:sqlite:db\\UserDB.db");
+            String url;
+            url = os.contains("win") ? "jdbc:sqlite:db\\UserDB.db" : "jdbc:sqlite:db//UserDB.db";
+            connection = DriverManager.getConnection(url);
         }
         catch(Exception e)
         {
