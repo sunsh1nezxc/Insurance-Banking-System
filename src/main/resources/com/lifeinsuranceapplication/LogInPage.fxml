@@ -8,20 +8,23 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="mainPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="736.0" prefWidth="368.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="mainPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="736.0" prefWidth="368.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lifeinsuranceapplication.SceneController">
    <children>
       <Button fx:id="loginBtn" layoutX="15.0" layoutY="424.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="340.0" style="-fx-background-color: #008a17;" text="Войти" textFill="WHITE">
          <font>
             <Font name="System Bold" size="18.0" />
-         </font></Button>
+         </font>
+      </Button>
       <PasswordField fx:id="passwordField" layoutX="15.0" layoutY="323.0" prefHeight="45.0" prefWidth="340.0" promptText="Пароль">
          <font>
             <Font size="18.0" />
-         </font></PasswordField>
+         </font>
+      </PasswordField>
       <TextField fx:id="loginField" layoutX="15.0" layoutY="264.0" prefHeight="45.0" prefWidth="340.0" promptText="Мобильный телефон/ИИН">
          <font>
             <Font size="18.0" />
-         </font></TextField>
+         </font>
+      </TextField>
       <CheckBox fx:id="checkPassword" layoutX="21.0" layoutY="385.0" mnemonicParsing="false" text="Показать пароль">
          <font>
             <Font size="15.0" />
@@ -52,9 +55,14 @@
             <Font size="15.0" />
          </font>
       </Button>
-      <Button fx:id="registationButton" layoutX="167.0" layoutY="483.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Зарегистрироваться" textFill="#008a17">
+      <Button fx:id="registationButton" layoutX="167.0" layoutY="483.0" mnemonicParsing="false" onAction="#switchToSceneRegisterPage" style="-fx-background-color: white;" text="Зарегистрироваться" textFill="#008a17">
          <font>
             <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="nazadButton" layoutX="-3.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: #ffffff;" text="&lt;">
+         <font>
+            <Font name="System Bold" size="25.0" />
          </font>
       </Button>
    </children>
