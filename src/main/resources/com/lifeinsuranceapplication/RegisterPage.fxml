@@ -48,7 +48,7 @@
             <Font size="18.0" />
          </font>
       </TextField>
-      <Label fx:id="statusLabel" alignment="TOP_CENTER" contentDisplay="TOP" layoutX="89.0" layoutY="368.0" prefHeight="21.0" prefWidth="183.0" textAlignment="CENTER" textFill="RED">
+      <Label fx:id="statusLabel" alignment="TOP_CENTER" contentDisplay="TOP" layoutX="58.0" layoutY="368.0" prefHeight="21.0" prefWidth="245.0" textAlignment="CENTER" textFill="RED">
          <font>
             <Font size="15.0" />
          </font>
