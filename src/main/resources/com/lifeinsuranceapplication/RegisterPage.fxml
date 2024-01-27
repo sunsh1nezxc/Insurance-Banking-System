@@ -8,7 +8,7 @@
 
 <AnchorPane fx:id="RegisterPage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="736.0" prefWidth="368.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lifeinsuranceapplication.SceneController">
    <children>
-      <Button fx:id="loginBtn1" layoutX="14.0" layoutY="408.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="340.0" style="-fx-background-color: #008a17;" text="Зарегистрироваться" textFill="WHITE">
+      <Button fx:id="registerBtn" layoutX="14.0" layoutY="408.0" mnemonicParsing="false" onAction="#register" prefHeight="45.0" prefWidth="340.0" style="-fx-background-color: #008a17;" text="Зарегистрироваться" textFill="WHITE">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
@@ -38,15 +38,20 @@
             <Font name="System Bold" size="25.0" />
          </font>
       </Button>
-      <TextField fx:id="vvodParol" layoutX="15.0" layoutY="257.0" prefHeight="45.0" prefWidth="340.0" promptText="Введите пароль">
+      <TextField fx:id="passwordRegisterField" accessibleRole="PASSWORD_FIELD" layoutX="15.0" layoutY="257.0" prefHeight="45.0" prefWidth="340.0" promptText="Введите пароль">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField fx:id="vvodParolDva" layoutX="15.0" layoutY="313.0" prefHeight="45.0" prefWidth="340.0" promptText="Повторите пароль">
+      <TextField fx:id="passwordRegisterFieldRepeat" layoutX="15.0" layoutY="313.0" prefHeight="45.0" prefWidth="340.0" promptText="Повторите пароль">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
+      <Label fx:id="statusLabel" alignment="TOP_CENTER" contentDisplay="TOP" layoutX="89.0" layoutY="368.0" prefHeight="21.0" prefWidth="183.0" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

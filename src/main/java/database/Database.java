@@ -26,11 +26,12 @@ public class Database
 
     public static boolean checkLoginPassword(String login, String password){
         Connection con = dbConnection();
-        String query = "SELECT * FROM AuthorizedUsers WHERE iin_phoneNumber = ? and password = ?";
+        String query = "SELECT * FROM AuthorizedUsers WHERE (id = ? or phoneNumber = ?) and password = ?";
         try {
             PreparedStatement preparedStatement = con.prepareStatement(query);
             preparedStatement.setString(1, login);
-            preparedStatement.setString(2, password);
+            preparedStatement.setString(2, login);
+            preparedStatement.setString(3, password);
             ResultSet rs = preparedStatement.executeQuery();
 
             return rs.next();
@@ -55,6 +56,27 @@ public class Database
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public static boolean checkIfUserExists(String findStr)
+    {
+        Connection con = dbConnection();
+        String query = "SELECT * FROM AuthorizedUsers WHERE id = ? or phoneNumber = ?";
+        try {
+            PreparedStatement preparedStatement = con.prepareStatement(query);
+            preparedStatement.setString(1, findStr);
+            preparedStatement.setString(2, findStr);
+            ResultSet rs = preparedStatement.executeQuery();
+
+            System.out.println("User added successfully");
+
+            return rs.next();
+
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
+        }
+
+        return false;
     }
 
     public static void changeUserPassword(String login){

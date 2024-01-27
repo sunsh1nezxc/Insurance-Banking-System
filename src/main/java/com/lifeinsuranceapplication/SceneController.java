@@ -7,6 +7,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.FileChooser;
@@ -26,6 +27,37 @@ public class SceneController {
 
     @FXML
     private PasswordField passwordField;
+
+    // Register page START
+    @FXML
+    private TextField passwordRegisterField;
+
+    @FXML
+    private TextField passwordRegisterFieldRepeat;
+
+    @FXML
+    private Label statusLabel;
+
+    @FXML
+    private TextField IINReg;
+
+    @FXML
+    private TextField phoneNumberL;
+
+    public void register(ActionEvent actionEvent) {
+        if(passwordRegisterField.getText() != passwordRegisterFieldRepeat.getText()){
+            statusLabel.setText("Пароли не совпадают");
+        }
+        else{
+            if(Database.checkIfUserExists(IINReg.getText()) == true)
+            {
+                statusLabel.setText("Такой ИИН уже зарегистрирован");
+            }
+            else Database.newUserRegister(IINReg.getText(), passwordRegisterField.getText(), phoneNumberL.getText());
+        }
+    }
+    // Register page END
+
 
     public void switchToSceneRegisterPage(ActionEvent event) throws IOException{
         root = FXMLLoader.load(getClass().getResource("RegisterPage.fxml"));
@@ -68,6 +100,7 @@ public class SceneController {
     public void loginCheck(ActionEvent actionEvent) {
         System.out.print(Database.checkLoginPassword(loginField.getText(), passwordField.getText()));
     }
+
 
 
 }
