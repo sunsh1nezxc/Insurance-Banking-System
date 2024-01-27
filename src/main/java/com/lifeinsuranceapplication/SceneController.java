@@ -52,4 +52,6 @@ public class SceneController {
     public void loginCheck(ActionEvent actionEvent) {
         System.out.print(Database.checkLoginPassword(loginField.getText(), passwordField.getText()));
     }
+
+
 }

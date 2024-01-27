@@ -24,7 +24,7 @@
             </ImageView>
             <Label layoutX="45.0" layoutY="72.0" text="Мои" />
             <Label layoutX="36.0" layoutY="89.0" text="полисы" />
-            <Button layoutX="43.0" layoutY="139.0" mnemonicParsing="false" text="Ера" />
+            <Button layoutX="43.0" layoutY="139.0" mnemonicParsing="false" onAction="#choseFiles" text="Ера" />
             <Button layoutX="236.0" layoutY="139.0" mnemonicParsing="false" text="Ильяс" />
          </children>
       </Pane>
@@ -62,12 +62,12 @@
             <Font name="Arial Bold" size="16.0" />
          </font>
       </Button>
-      <Button layoutX="59.0" layoutY="39.0" mnemonicParsing="false" style="-fx-background-color: #ededed;" text="Регистрация">
+      <Button layoutX="59.0" layoutY="39.0" mnemonicParsing="false" onAction="#switchToSceneLoginPage" style="-fx-background-color: #ededed;" text="Регистрация">
          <font>
             <Font name="Arial Bold" size="18.0" />
          </font>
       </Button>
-      <Button layoutX="58.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: #ededed;" text="Вход">
+      <Button layoutX="58.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToSceneLoginPage" style="-fx-background-color: #ededed;" text="Вход">
          <font>
             <Font name="Arial Bold" size="18.0" />
          </font>
