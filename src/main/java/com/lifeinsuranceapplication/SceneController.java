@@ -47,11 +47,13 @@ public class SceneController {
     public void register(ActionEvent actionEvent) {
         if(!passwordRegisterField.getText().equals(passwordRegisterFieldRepeat.getText())){
             statusLabel.setText("Пароли не совпадают");
+            return;
         }
         else{
             if(Database.checkIfUserExists(IINReg.getText()))
             {
                 statusLabel.setText("Такой ИИН уже зарегистрирован");
+                return;
             }
             if(!Database.checkIfPersonExists(IINReg.getText()))
             {
