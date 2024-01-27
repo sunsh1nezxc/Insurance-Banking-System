@@ -8,9 +8,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="mainPanel" fx:controller="com.lifeinsuranceapplication.LoginController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="736.0" prefWidth="368.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="mainPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="736.0" prefWidth="368.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Button fx:id="loginBtn" layoutX="15.0" layoutY="424.0" mnemonicParsing="false" onAction="#loginTry" prefHeight="45.0" prefWidth="340.0" style="-fx-background-color: #008a17;" text="Войти" textFill="WHITE">
+      <Button fx:id="loginBtn" layoutX="15.0" layoutY="424.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="340.0" style="-fx-background-color: #008a17;" text="Войти" textFill="WHITE">
          <font>
             <Font name="System Bold" size="18.0" />
          </font></Button>
