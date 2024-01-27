@@ -53,7 +53,7 @@ public class SceneController {
             {
                 statusLabel.setText("Такой ИИН уже зарегистрирован");
             }
-            if(Database.checkIfPersonExists(IINReg.getText()))
+            if(!Database.checkIfPersonExists(IINReg.getText()))
             {
                 statusLabel.setText("ИИН неверный");
             }
