@@ -60,7 +60,7 @@
             <Font name="Arial Bold" size="16.0" />
          </font>
       </Button>
-      <Button fx:id="nazadButton" layoutX="-3.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: #ffffff;" text="&lt;">
+      <Button fx:id="nazadButton" layoutX="-3.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToSceneMainMenu" style="-fx-background-color: #ffffff;" text="&lt;">
          <font>
             <Font name="System Bold" size="25.0" />
          </font>

@@ -42,6 +42,11 @@
                         <Font name="System Bold" size="14.0" />
                     </font>
                 </Label>
+            <Button fx:id="nazadButton" layoutX="7.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToSceneMainMenu" style="-fx-background-color: #ffffff;" text="&lt;">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
             </children>
         </AnchorPane>
     </children>

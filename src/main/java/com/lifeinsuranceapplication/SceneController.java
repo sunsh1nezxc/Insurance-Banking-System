@@ -43,6 +43,22 @@ public class SceneController {
         stage.show();
     }
 
+    public void switchToSceneMainMenu(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("MainMenu.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void switchToMewPage(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("medPage.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
     public void choseFiles(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("loginPage.fxml"));
         FileChooser chose = new FileChooser();

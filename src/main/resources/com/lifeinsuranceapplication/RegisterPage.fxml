@@ -8,7 +8,7 @@
 
 <AnchorPane fx:id="RegisterPage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="736.0" prefWidth="368.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lifeinsuranceapplication.SceneController">
    <children>
-      <Button fx:id="loginBtn1" layoutX="14.0" layoutY="550.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="340.0" style="-fx-background-color: #008a17;" text="Зарегистрироваться" textFill="WHITE">
+      <Button fx:id="loginBtn1" layoutX="14.0" layoutY="408.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="340.0" style="-fx-background-color: #008a17;" text="Зарегистрироваться" textFill="WHITE">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
@@ -33,32 +33,17 @@
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField fx:id="lasrName" layoutX="15.0" layoutY="255.0" prefHeight="45.0" prefWidth="340.0" promptText="Фамилия">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </TextField>
-      <TextField fx:id="firstName" layoutX="15.0" layoutY="311.0" prefHeight="45.0" prefWidth="340.0" promptText="Имя">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </TextField>
-      <TextField fx:id="ot4estvo" layoutX="15.0" layoutY="368.0" prefHeight="45.0" prefWidth="340.0" promptText="Отчество">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </TextField>
       <Button fx:id="nazadButtonDva" layoutY="14.0" mnemonicParsing="false" onAction="#switchToSceneLoginPage" style="-fx-background-color: #ffffff;" text="&lt;">
          <font>
             <Font name="System Bold" size="25.0" />
          </font>
       </Button>
-      <TextField fx:id="vvodParol" layoutX="15.0" layoutY="423.0" prefHeight="45.0" prefWidth="340.0" promptText="Введите пароль">
+      <TextField fx:id="vvodParol" layoutX="15.0" layoutY="257.0" prefHeight="45.0" prefWidth="340.0" promptText="Введите пароль">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField fx:id="vvodParolDva" layoutX="15.0" layoutY="477.0" prefHeight="45.0" prefWidth="340.0" promptText="Повторите пароль">
+      <TextField fx:id="vvodParolDva" layoutX="15.0" layoutY="313.0" prefHeight="45.0" prefWidth="340.0" promptText="Повторите пароль">
          <font>
             <Font size="18.0" />
          </font>
