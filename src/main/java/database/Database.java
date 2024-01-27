@@ -41,4 +41,26 @@ public class Database
 
         return false;
     }
+
+    public static void newUserRegister(String id, String password, String phoneNumber)
+    {
+        Connection con = dbConnection();
+        String query = "INSERT INTO AuthorizedUsers (id, password, phoneNumber) VALUES (?, ?, ?)";
+        try {
+            PreparedStatement preparedStatement = con.prepareStatement(query);
+            preparedStatement.setString(1, id);
+            preparedStatement.setString(2, password);
+            preparedStatement.setString(3, phoneNumber);
+            preparedStatement.execute();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static void changeUserPassword(String login){
+        // TODO add Password Change
+    }
+
+
+
 }
