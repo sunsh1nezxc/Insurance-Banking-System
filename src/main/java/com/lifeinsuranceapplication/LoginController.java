@@ -5,7 +5,11 @@ import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.control.CheckBox;
 public class LoginController {
+    @FXML
+    private CheckBox checkPassword;
+
     @FXML
     private Button loginBtn;
 
@@ -17,5 +21,4 @@ public class LoginController {
 
     @FXML
     private PasswordField passwordField;
-
 }
