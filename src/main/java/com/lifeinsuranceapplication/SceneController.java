@@ -9,8 +9,10 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
+import java.io.File;
 import java.io.IOException;
 
 
@@ -40,6 +42,13 @@ public class SceneController {
         stage.setScene(scene);
         stage.show();
     }
+
+    public void choseFiles(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("loginPage.fxml"));
+        FileChooser chose = new FileChooser();
+        File file = chose.showOpenDialog(null);
+    }
+
     public void loginCheck(ActionEvent actionEvent) {
         System.out.print(Database.checkLoginPassword(loginField.getText(), passwordField.getText()));
     }

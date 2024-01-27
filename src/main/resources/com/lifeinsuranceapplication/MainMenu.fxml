@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="736.0" prefWidth="368.0" style="-fx-background-color: #ededed;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lifeinsuranceapplication.SceneController">
+   <children>
+      <ImageView fitHeight="37.0" fitWidth="41.0" layoutX="21.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/com/lifeinsuranceapplication/images/user.jpeg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="13.0" layoutY="346.0" prefHeight="303.0" prefWidth="342.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="46.0" fitWidth="43.0" layoutX="37.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/com/lifeinsuranceapplication/images/polis.jpeg" />
+               </image>
+            </ImageView>
+            <Label layoutX="45.0" layoutY="72.0" text="Мои" />
+            <Label layoutX="36.0" layoutY="89.0" text="полисы" />
+            <Button layoutX="43.0" layoutY="139.0" mnemonicParsing="false" text="Ера" />
+            <Button layoutX="236.0" layoutY="139.0" mnemonicParsing="false" text="Ильяс" />
+         </children>
+      </Pane>
+      <Pane layoutX="-1.0" layoutY="677.0" prefHeight="60.0" prefWidth="368.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="37.0" fitWidth="49.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/com/lifeinsuranceapplication/images/domik.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="49.0" layoutX="317.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/com/lifeinsuranceapplication/images/user.jpeg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="42.0" layoutY="197.0" text="СДЕЛАЙТЕ КУРС ПЖ ПЖ ПЖ">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="60.0" fitWidth="55.0" layoutX="297.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/com/lifeinsuranceapplication/images/logo.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="58.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: #ededed;" text="Ввод">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="68.0" layoutY="24.0" mnemonicParsing="false" style="-fx-background-color: #ededed;" text="Ввод">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="59.0" layoutY="39.0" mnemonicParsing="false" style="-fx-background-color: #ededed;" text="Регистрация">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="58.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: #ededed;" text="Вход">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
