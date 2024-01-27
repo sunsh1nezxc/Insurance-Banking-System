@@ -33,7 +33,7 @@ public class Database
             preparedStatement.setString(2, login);
             preparedStatement.setString(3, password);
             ResultSet rs = preparedStatement.executeQuery();
-
+            con.close();
             return rs.next();
 
         } catch (Exception e) {
@@ -52,8 +52,10 @@ public class Database
             preparedStatement.setString(1, id);
             preparedStatement.setString(2, password);
             preparedStatement.setString(3, phoneNumber);
+            preparedStatement.setQueryTimeout(10);
             preparedStatement.execute();
             System.out.println("User added successfully");
+            con.close();
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
@@ -67,7 +69,7 @@ public class Database
             PreparedStatement preparedStatement = con.prepareStatement(query);
             preparedStatement.setString(1, findStr);
             ResultSet rs = preparedStatement.executeQuery();
-
+            con.close();
             return rs.next();
 
         } catch (Exception e) {
@@ -87,7 +89,7 @@ public class Database
             preparedStatement.setString(2, findStr);
             ResultSet rs = preparedStatement.executeQuery();
 
-
+            con.close();
             return rs.next();
 
         } catch (Exception e) {
