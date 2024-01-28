@@ -17,11 +17,6 @@
                         <Font name="System Bold" size="18.0" />
                     </font>
                 </Button>
-                <Button fx:id="status1" layoutX="79.0" layoutY="700.0" mnemonicParsing="false" prefHeight="4.0" prefWidth="209.0" style="-fx-background-color: #ffffff;" text="заявка принята ">
-                    <font>
-                        <Font name="System Bold" size="10.0" />
-                    </font>
-                </Button>
                 <ImageView fitHeight="62.0" fitWidth="74.0" layoutX="153.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@../../images/fff.png" />
@@ -29,17 +24,17 @@
                 </ImageView>
                 <Label layoutX="31.0" layoutY="245.0" text="Перетащите  файлы сюда">
                     <font>
-                        <Font name="System Bold" size="24.0" />
+                        <Font name="Arial Bold" size="24.0" />
                     </font>
                 </Label>
                 <Button fx:id="status2" layoutX="53.0" layoutY="305.0" mnemonicParsing="false" onAction="#choseFiles" prefHeight="46.0" prefWidth="261.0" style="-fx-background-color: #008a17;" text="Выберите файлы" textFill="WHITE">
                     <font>
-                        <Font name="System Bold" size="18.0" />
+                        <Font name="Arial Narrow Bold" size="18.0" />
                     </font>
                 </Button>
                 <Label layoutX="85.0" layoutY="368.0" text="Максимальный размер 5 мб">
                     <font>
-                        <Font name="System Bold" size="14.0" />
+                        <Font name="Arial Hebrew Bold" size="14.0" />
                     </font>
                 </Label>
             <Button fx:id="nazadButton" layoutX="7.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToSceneMainMenu" style="-fx-background-color: #ffffff;" text="&lt;">
