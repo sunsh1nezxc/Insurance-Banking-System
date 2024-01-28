@@ -39,7 +39,7 @@
                   <Font name="Arial" size="13.0" />
                </font>
             </Button>
-            <Button layoutX="258.0" layoutY="133.0" mnemonicParsing="false" onAction="#switchToMewPage" style="-fx-background-color: #ffffff;" text="полюс" />
+            <Button layoutX="258.0" layoutY="133.0" mnemonicParsing="false" onAction="#switchToMewPage" style="-fx-background-color: #ffffff;" text="полис" />
             <ImageView fitHeight="46.0" fitWidth="43.0" layoutX="265.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/oformitPolus.jpeg" />
