@@ -106,6 +106,29 @@ public class SceneController {
         System.out.print(Database.checkLoginPassword(loginField.getText(), passwordField.getText()));
     }
 
+    @FXML
+    private TextField binField;
 
+    @FXML
+    private PasswordField passwordSpecialField;
 
+    public void binCheck(ActionEvent actionEvent) {
+        System.out.print(Database.checkBinPassword(binField.getText(), passwordSpecialField.getText()));
+    }
+
+    public void changePageToRegular(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("LogInPage.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void changePageToJur(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("LoginPageJuridical.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
 }
