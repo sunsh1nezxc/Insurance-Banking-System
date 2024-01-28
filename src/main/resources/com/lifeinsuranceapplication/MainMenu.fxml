@@ -61,7 +61,7 @@
             </ImageView>
          </children>
       </Pane>
-      <ImageView fitHeight="60.0" fitWidth="55.0" layoutX="297.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true"/>
+      <ImageView fitHeight="60.0" fitWidth="55.0" layoutX="297.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
 
       <ImageView fitHeight="60.0" fitWidth="55.0" layoutX="291.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -96,7 +96,7 @@
                   <Image url="@../../images/foto4.jpg" />
                </image>
             </ImageView>
-            <Button layoutX="214.0" layoutY="42.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="88.0" style="-fx-background-color: #ffffff;" text="Пройти" textFill="#008a17">
+            <Button layoutX="214.0" layoutY="42.0" mnemonicParsing="false" onAction="#switchToEdupages" prefHeight="31.0" prefWidth="88.0" style="-fx-background-color: #ffffff;" text="Пройти" textFill="#008a17">
                <font>
                   <Font name="Arial Bold" size="17.0" />
                </font>
