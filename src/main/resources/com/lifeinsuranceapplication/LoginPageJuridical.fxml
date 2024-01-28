@@ -10,17 +10,17 @@
 
 <AnchorPane fx:id="mainPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="736.0" prefWidth="368.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lifeinsuranceapplication.SceneController">
    <children>
-      <Button fx:id="loginBtn" layoutX="15.0" layoutY="424.0" mnemonicParsing="false" onAction="#loginCheck" prefHeight="45.0" prefWidth="340.0" style="-fx-background-color: #008a17;" text="Войти" textFill="WHITE">
+      <Button fx:id="loginBtn" layoutX="15.0" layoutY="424.0" mnemonicParsing="false" onAction="#binCheck" prefHeight="45.0" prefWidth="340.0" style="-fx-background-color: #008a17;" text="Войти" textFill="WHITE">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Button>
-      <PasswordField fx:id="passwordField" layoutX="15.0" layoutY="323.0" prefHeight="45.0" prefWidth="340.0" promptText="Пароль">
+      <PasswordField fx:id="passwordSpecialField" layoutX="15.0" layoutY="323.0" prefHeight="45.0" prefWidth="340.0" promptText="Пароль">
          <font>
             <Font size="18.0" />
          </font>
       </PasswordField>
-      <TextField fx:id="loginField" layoutX="15.0" layoutY="264.0" prefHeight="45.0" prefWidth="340.0" promptText="Мобильный телефон/ИИН">
+      <TextField fx:id="binField" layoutX="15.0" layoutY="264.0" prefHeight="45.0" prefWidth="340.0" promptText="БИН">
          <font>
             <Font size="18.0" />
          </font>
@@ -45,12 +45,12 @@
             <Font name="System Bold" size="26.0" />
          </font>
       </Label>
-      <Button fx:id="FirlicoButton" layoutX="7.0" layoutY="83.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="172.0" style="-fx-background-color: #026e14; -fx-background-radius: 15;" text="Физ. лицо" textFill="WHITE">
+      <Button fx:id="FirlicoButton" layoutX="7.0" layoutY="83.0" mnemonicParsing="false" onAction="#changePageToRegular" prefHeight="37.0" prefWidth="172.0" style="-fx-background-color: #008a17; -fx-background-radius: 15;" text="Физ. лицо" textFill="WHITE">
          <font>
             <Font size="15.0" />
          </font>
       </Button>
-      <Button fx:id="UrLicoButton" layoutX="185.0" layoutY="83.0" mnemonicParsing="false" onAction="#changePageToJur" prefHeight="37.0" prefWidth="180.0" style="-fx-background-color: #008a17; -fx-background-radius: 15;" text="Юр. лицо" textFill="WHITE">
+      <Button fx:id="UrLicoButton" layoutX="185.0" layoutY="83.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="180.0" style="-fx-background-color: #026e14; -fx-background-radius: 15;" text="Юр. лицо" textFill="WHITE">
          <font>
             <Font size="15.0" />
          </font>
