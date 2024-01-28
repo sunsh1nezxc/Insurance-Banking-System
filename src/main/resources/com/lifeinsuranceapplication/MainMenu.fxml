@@ -15,7 +15,7 @@
             <Image url="@../../images/userLoginIcon.jpeg" />
          </image>
       </ImageView>
-      <Pane layoutX="13.0" layoutY="346.0" prefHeight="303.0" prefWidth="342.0" style="-fx-background-color: #ffffff;">
+      <Pane layoutX="13.0" layoutY="386.0" prefHeight="235.0" prefWidth="342.0" style="-fx-background-color: #ffffff; -fx-background-radius: 30;">
          <children>
             <ImageView fitHeight="46.0" fitWidth="43.0" layoutX="37.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -23,31 +23,40 @@
                </image>
             </ImageView>
             <Label layoutX="45.0" layoutY="72.0" text="Мои" />
-            <Label layoutX="36.0" layoutY="89.0" text="полисы" />
-            <Button layoutX="43.0" layoutY="139.0" mnemonicParsing="false" onAction="#switchToMewPage" text="Ера" />
-            <Button layoutX="236.0" layoutY="139.0" mnemonicParsing="false" text="Ильяс" />
+            <Label layoutX="36.0" layoutY="98.0" text="полисы" />
+            <ImageView fitHeight="46.0" fitWidth="43.0" layoutX="150.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/slu4ai.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="131.0" layoutY="68.0" mnemonicParsing="false" onAction="#switchToMewPage" style="-fx-background-color: #ffffff;" text="Страховой">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font></Button>
+            <Button layoutX="142.0" layoutY="93.0" mnemonicParsing="false" onAction="#switchToMewPage" style="-fx-background-color: #ffffff;" text="случаи" />
+            <Button layoutX="244.0" layoutY="65.0" mnemonicParsing="false" onAction="#switchToMewPage" style="-fx-background-color: #ffffff;" text="Оформить">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="256.0" layoutY="94.0" mnemonicParsing="false" onAction="#switchToMewPage" style="-fx-background-color: #ffffff;" text="полис" />
          </children>
       </Pane>
-      <Pane layoutX="-1.0" layoutY="677.0" prefHeight="60.0" prefWidth="368.0" style="-fx-background-color: #ffffff;">
+      <Pane layoutX="-1.0" layoutY="669.0" prefHeight="68.0" prefWidth="368.0" style="-fx-background-color: #ffffff;">
          <children>
-            <ImageView fitHeight="37.0" fitWidth="49.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="37.0" fitWidth="49.0" layoutX="25.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/domik.jpeg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="37.0" fitWidth="49.0" layoutX="317.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="37.0" fitWidth="49.0" layoutX="309.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/user.jpeg" />
                </image>
             </ImageView>
          </children>
       </Pane>
-      <Label layoutX="42.0" layoutY="197.0" text="СДЕЛАЙТЕ КУРС ПЖ ПЖ ПЖ">
-         <font>
-            <Font name="System Bold" size="21.0" />
-         </font>
-      </Label>
-      <ImageView fitHeight="60.0" fitWidth="55.0" layoutX="297.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="60.0" fitWidth="55.0" layoutX="291.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../images/logo.png" />
          </image>
@@ -72,5 +81,24 @@
             <Font name="Arial Bold" size="18.0" />
          </font>
       </Button>
+      <Pane layoutX="13.0" layoutY="118.0" prefHeight="235.0" prefWidth="342.0" style="-fx-background-color: #ffffff; -fx-background-radius: 30;">
+         <children>
+            <ImageView fitHeight="195.0" fitWidth="191.0" layoutX="23.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/foto4.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="214.0" layoutY="50.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="88.0" style="-fx-background-color: #ffffff;" text="Пройти" textFill="#008a17">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Button>
+            <Label layoutX="228.0" layoutY="81.0" text="обучающий курс">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
    </children>
 </AnchorPane>
