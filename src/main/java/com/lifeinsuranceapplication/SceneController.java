@@ -106,9 +106,12 @@ public class SceneController {
         System.out.print(Database.checkLoginPassword(loginField.getText(), passwordField.getText()));
     }
 
-    public void sendAns(ActionEvent actionEvent) throws  IOException{
+    public void sendAns(ActionEvent event) throws  IOException{
     Parent root =FXMLLoader.load(getClass().getResource("eduMainPage"));
-    System.out.print("Button pressed");
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
     @FXML
     private TextField binField;
