@@ -24,6 +24,24 @@ public class Database
 
     }
 
+    public static boolean checkBinPassword(String login, String password){
+        Connection con = dbConnection();
+        String query = "SELECT * FROM SpecialAuthUsers WHERE bin = ? and password = ?";
+        try {
+            PreparedStatement preparedStatement = con.prepareStatement(query);
+            preparedStatement.setString(1, login);
+            preparedStatement.setString(2, password);
+            ResultSet rs = preparedStatement.executeQuery();
+            con.close();
+            return rs.next();
+
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
+        }
+
+        return false;
+    }
+
     public static boolean checkLoginPassword(String login, String password){
         Connection con = dbConnection();
         String query = "SELECT * FROM AuthorizedUsers WHERE (id = ? or phoneNumber = ?) and password = ?";
