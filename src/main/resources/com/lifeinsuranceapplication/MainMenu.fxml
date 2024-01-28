@@ -42,11 +42,6 @@
             </ImageView>
          </children>
       </Pane>
-      <Label layoutX="42.0" layoutY="197.0" text="СДЕЛАЙТЕ КУРС ПЖ ПЖ ПЖ">
-         <font>
-            <Font name="System Bold" size="21.0" />
-         </font>
-      </Label>
       <ImageView fitHeight="60.0" fitWidth="55.0" layoutX="297.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../images/logo.png" />
@@ -72,5 +67,6 @@
             <Font name="Arial Bold" size="18.0" />
          </font>
       </Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="97.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>

@@ -106,6 +106,10 @@ public class SceneController {
         System.out.print(Database.checkLoginPassword(loginField.getText(), passwordField.getText()));
     }
 
+    public void sendAns(ActionEvent actionEvent) throws  IOException{
+    Parent root =FXMLLoader.load(getClass().getResource("eduMainPage"));
+    System.out.print("Button pressed");
+    }
 
 
 }

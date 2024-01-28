@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="736.0" prefWidth="368.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lifeinsuranceapplication.QuizController">
+   <children>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="1">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Картой какого банка я могу оплачивать страховые взносы на сайте?" wrappingWidth="343.17767333984375">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <RadioButton id="quiz1Corect" fx:id="correct1" layoutX="10.0" layoutY="78.0" mnemonicParsing="false" onAction="#trueAns" prefHeight="23.0" prefWidth="330.0" style="-fx-background-color: #008a17; -fx-background-radius: 6px;" text=" Платежную карту любого банка." textFill="WHITE" />
+                        <RadioButton layoutX="10.0" layoutY="107.0" mnemonicParsing="false" onAction="#falseAns" prefHeight="23.0" prefWidth="330.0" style="-fx-background-color: #008a17; -fx-background-radius: 6px;" text=" Платежная карта Халық банка" textFill="WHITE" />
+                        <RadioButton layoutX="10.0" layoutY="139.0" mnemonicParsing="false" onAction="#falseAns" prefHeight="23.0" prefWidth="330.0" style="-fx-background-color: #008a17; -fx-background-radius: 6px;" text="Платежная карта Каспи банка" textFill="WHITE" />
+                        <RadioButton layoutX="10.0" layoutY="170.0" mnemonicParsing="false" onAction="#falseAns" prefHeight="23.0" prefWidth="328.0" style="-fx-background-color: #008a17; -fx-background-radius: 6px;" text="Наличный расчёт" textFill="WHITE" />
+                        <Button fx:id="buttoSend1" layoutX="95.0" layoutY="516.0" mnemonicParsing="false" onAction="#sendAns" prefHeight="46.0" prefWidth="178.0" style="-fx-background-color: #008a17;" text="Отправить" textFill="WHITE" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="12.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Могу ли я оплатить страховой взнос за другого человека?" wrappingWidth="343.17767333984375">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <RadioButton fx:id="correct2" layoutX="10.0" layoutY="92.0" mnemonicParsing="false" onAction="#trueAns" prefHeight="23.0" prefWidth="346.0" style="-fx-background-color: #008a17; -fx-background-radius: 6px;" text="Да. Вы можете оплатить взнос" textFill="WHITE" />
+                        <RadioButton layoutX="8.0" layoutY="152.0" mnemonicParsing="false" onAction="#falseAns" prefHeight="23.0" prefWidth="346.0" style="-fx-background-color: #008a17; -fx-background-radius: 6px;" text="Если он клиент Халық банка" textFill="WHITE" />
+                        <RadioButton layoutX="10.0" layoutY="121.0" mnemonicParsing="false" onAction="#falseAns" prefHeight="23.0" prefWidth="346.0" style="-fx-background-color: #008a17; -fx-background-radius: 6px;" text="Нет" textFill="WHITE" />
+                        <RadioButton layoutX="8.0" layoutY="182.0" mnemonicParsing="false" onAction="#falseAns" prefHeight="23.0" prefWidth="346.0" style="-fx-background-color: #008a17; -fx-background-radius: 6px;" text="Наличный расчёт" textFill="WHITE" />
+                        <Button fx:id="buttoSend2" layoutX="95.0" layoutY="516.0" mnemonicParsing="false" onAction="#sendAns" prefHeight="46.0" prefWidth="178.0" style="-fx-background-color: #008a17;" text="Отправить" textFill="WHITE" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="3">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="12.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Будет ли удерживаться с меня комиссия за оплату страхового взноса?" wrappingWidth="343.17767333984375">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <RadioButton fx:id="correct3" layoutX="8.0" layoutY="71.0" mnemonicParsing="false" onAction="#trueAns" prefHeight="23.0" prefWidth="352.0" style="-fx-background-color: #008a17; -fx-background-radius: 6px;" text="Нет." textFill="WHITE" />
+                        <RadioButton layoutX="8.0" layoutY="105.0" mnemonicParsing="false" onAction="#falseAns" prefHeight="23.0" prefWidth="352.0" style="-fx-background-color: #008a17; -fx-background-radius: 6px;" text="1% от обшей суммы застрахованого" textFill="WHITE" />
+                        <RadioButton layoutX="9.0" layoutY="137.0" mnemonicParsing="false" onAction="#falseAns" prefHeight="23.0" prefWidth="350.0" style="-fx-background-color: #008a17; -fx-background-radius: 6px;" text="3% от  внесенный суммы" textFill="WHITE" />
+                        <RadioButton layoutX="8.0" layoutY="169.0" mnemonicParsing="false" onAction="#falseAns" prefHeight="23.0" prefWidth="352.0" style="-fx-background-color: #008a17; -fx-background-radius: 6px;" text="1% от внесенный суммы" textFill="WHITE" />
+                        <Button fx:id="buttoSend3" layoutX="95.0" layoutY="516.0" mnemonicParsing="false" onAction="#sendAns" prefHeight="46.0" prefWidth="178.0" style="-fx-background-color: #008a17;" text="Отправить" textFill="WHITE" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="4">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="12.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сколко вы получите бонусов при офермлении страхование ?" wrappingWidth="343.17767333984375">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <RadioButton layoutX="11.0" layoutY="80.0" mnemonicParsing="false" onAction="#falseAns" prefHeight="23.0" prefWidth="345.0" style="-fx-background-color: #008a17; -fx-background-radius: 6px;" text="Получите 15% бонусов Халык Банк " textFill="WHITE" />
+                        <RadioButton layoutX="11.0" layoutY="112.0" mnemonicParsing="false" onAction="#falseAns" prefHeight="23.0" prefWidth="345.0" style="-fx-background-color: #008a17; -fx-background-radius: 6px;" text="Получите 5% бонусов Халык Банк" textFill="WHITE" />
+                        <RadioButton layoutX="12.0" layoutY="147.0" mnemonicParsing="false" onAction="#falseAns" prefHeight="23.0" prefWidth="345.0" style="-fx-background-color: #008a17; -fx-background-radius: 6px;" text="Получите 9% бонусов Халык Банк " textFill="WHITE" />
+                        <RadioButton fx:id="correct4" layoutX="12.0" layoutY="180.0" mnemonicParsing="false" onAction="#trueAns" prefHeight="23.0" prefWidth="345.0" style="-fx-background-color: #008a17; -fx-background-radius: 6px;" text="Получите 10% бонусов Халык Банк " textFill="WHITE" />
+                        <Button fx:id="buttoSend4" layoutX="95.0" layoutY="516.0" mnemonicParsing="false" onAction="#sendAns" prefHeight="46.0" prefWidth="178.0" style="-fx-background-color: #008a17;" text="Отправить" textFill="WHITE" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="5">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="12.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="До сколки можете компенсировать расходы на лечение с страхованием?" wrappingWidth="343.17767333984375">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <RadioButton layoutX="12.0" layoutY="85.0" mnemonicParsing="false" onAction="#falseAns" prefHeight="23.0" prefWidth="330.0" style="-fx-background-color: #008a17; -fx-background-radius: 6px;" text="до 4.000.000 тенге" textFill="WHITE" />
+                        <RadioButton layoutX="12.0" layoutY="113.0" mnemonicParsing="false" onAction="#falseAns" prefHeight="23.0" prefWidth="330.0" style="-fx-background-color: #008a17; -fx-background-radius: 6px;" text="до 1.500.000 тенге" textFill="WHITE" />
+                        <RadioButton fx:id="correct5" layoutX="12.0" layoutY="143.0" mnemonicParsing="false" onAction="#trueAns" prefHeight="23.0" prefWidth="330.0" style="-fx-background-color: #008a17; -fx-background-radius: 6px;" text="до 2.000.000 тенге" textFill="WHITE" />
+                        <RadioButton layoutX="12.0" layoutY="173.0" mnemonicParsing="false" onAction="#falseAns" prefHeight="23.0" prefWidth="330.0" style="-fx-background-color: #008a17; -fx-background-radius: 6px;" text="до 3.000.000 тенге" textFill="WHITE" />
+                        <Button fx:id="buttoSend5" layoutX="95.0" layoutY="516.0" mnemonicParsing="false" onAction="#sendAns" prefHeight="46.0" prefWidth="178.0" style="-fx-background-color: #008a17;" text="Отправить" textFill="WHITE" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="6">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="12.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Какие риски покрывает страхование от несчасного случая ?" wrappingWidth="343.17767333984375">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <RadioButton fx:id="correct6" layoutX="12.0" layoutY="137.0" mnemonicParsing="false" onAction="#trueAns" prefHeight="23.0" prefWidth="330.0" style="-fx-background-color: #008a17; -fx-background-radius: 6px;" text="Травма застрахованного и  смерть застрахованного" textFill="WHITE" />
+                        <RadioButton layoutX="12.0" layoutY="104.0" mnemonicParsing="false" onAction="#falseAns" prefHeight="23.0" prefWidth="330.0" style="-fx-background-color: #008a17; -fx-background-radius: 6px;" text="Смерть застрахованного" textFill="WHITE" />
+                        <RadioButton layoutX="12.0" layoutY="72.0" mnemonicParsing="false" onAction="#falseAns" prefHeight="23.0" prefWidth="330.0" style="-fx-background-color: #008a17; -fx-background-radius: 6px;" text="Травма застрахованного" textFill="WHITE" />
+                        <RadioButton layoutX="12.0" layoutY="170.0" mnemonicParsing="false" onAction="#falseAns" prefHeight="23.0" prefWidth="330.0" style="-fx-background-color: #008a17; -fx-background-radius: 6px;" text="Ничего из   предложеных" textFill="WHITE" />
+                        <Button fx:id="buttoSend6" layoutX="95.0" layoutY="516.0" mnemonicParsing="false" onAction="#sendAns" prefHeight="46.0" prefWidth="178.0" style="-fx-background-color: #008a17;" text="Отправить" textFill="WHITE" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="7">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="12.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="До сколких людей одновременно возможно застраховать страховкой ? ?" wrappingWidth="343.17767333984375">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <RadioButton fx:id="correct7" layoutX="13.0" layoutY="108.0" mnemonicParsing="false" onAction="#trueAns" prefHeight="23.0" prefWidth="330.0" style="-fx-background-color: #008a17; -fx-background-radius: 6px;" text="до 4 человек" textFill="WHITE" />
+                        <RadioButton layoutX="12.0" layoutY="76.0" mnemonicParsing="false" onAction="#falseAns" prefHeight="23.0" prefWidth="330.0" style="-fx-background-color: #008a17; -fx-background-radius: 6px;" text="до 3 человек" textFill="WHITE" />
+                        <RadioButton layoutX="12.0" layoutY="138.0" mnemonicParsing="false" onAction="#falseAns" prefHeight="23.0" prefWidth="330.0" style="-fx-background-color: #008a17; -fx-background-radius: 6px;" text="до 5 человек" textFill="WHITE" />
+                        <RadioButton layoutX="13.0" layoutY="168.0" mnemonicParsing="false" onAction="#falseAns" prefHeight="23.0" prefWidth="330.0" style="-fx-background-color: #008a17; -fx-background-radius: 6px;" text="до 2 человек" textFill="WHITE" />
+                        <Button fx:id="buttoSend7" layoutX="95.0" layoutY="516.0" mnemonicParsing="false" onAction="#sendAns" prefHeight="46.0" prefWidth="178.0" style="-fx-background-color: #008a17;" text="Отправить" textFill="WHITE" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="8">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="12.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="От скольки до скольки возраста можно застраховать человека ?" wrappingWidth="343.17767333984375">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <RadioButton fx:id="correct8" layoutX="12.0" layoutY="112.0" mnemonicParsing="false" onAction="#trueAns" prefHeight="23.0" prefWidth="330.0" style="-fx-background-color: #008a17; -fx-background-radius: 6px;" text="от 1 года до 63 лет" textFill="WHITE" />
+                        <RadioButton layoutX="12.0" layoutY="82.0" mnemonicParsing="false" onAction="#falseAns" prefHeight="23.0" prefWidth="330.0" style="-fx-background-color: #008a17; -fx-background-radius: 6px;" text="от 3 года до 63 лет" textFill="WHITE" />
+                        <RadioButton layoutX="12.0" layoutY="142.0" mnemonicParsing="false" onAction="#falseAns" prefHeight="23.0" prefWidth="330.0" style="-fx-background-color: #008a17; -fx-background-radius: 6px;" text="от 18 года до 63 лет" textFill="WHITE" />
+                        <RadioButton layoutX="12.0" layoutY="171.0" mnemonicParsing="false" onAction="#falseAns" prefHeight="23.0" prefWidth="330.0" style="-fx-background-color: #008a17; -fx-background-radius: 6px;" text="от 1 года до 65 лет" textFill="WHITE" />
+                        <Button fx:id="buttoSend8" layoutX="95.0" layoutY="516.0" mnemonicParsing="false" onAction="#sendAns" prefHeight="46.0" prefWidth="178.0" style="-fx-background-color: #008a17;" text="Отправить" textFill="WHITE" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="9">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="12.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Обязательным условием начисления бонуса является  ?" wrappingWidth="343.17767333984375">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <RadioButton fx:id="correct9" layoutX="12.0" layoutY="106.0" mnemonicParsing="false" onAction="#trueAns" prefHeight="23.0" prefWidth="330.0" style="-fx-background-color: #008a17; -fx-background-radius: 6px;" text="Наличие дейстующей платёжной карты Халык Банка" textFill="WHITE" />
+                        <RadioButton layoutX="12.0" layoutY="74.0" mnemonicParsing="false" onAction="#falseAns" prefHeight="23.0" prefWidth="330.0" style="-fx-background-color: #008a17; -fx-background-radius: 6px;" text="Наличие дейстующей кредита из Халық Банка" textFill="WHITE" />
+                        <RadioButton layoutX="13.0" layoutY="139.0" mnemonicParsing="false" onAction="#falseAns" prefHeight="23.0" prefWidth="330.0" style="-fx-background-color: #008a17; -fx-background-radius: 6px;" text="Наличие действующего депозита" textFill="WHITE" />
+                        <RadioButton layoutX="13.0" layoutY="171.0" mnemonicParsing="false" onAction="#falseAns" prefHeight="23.0" prefWidth="330.0" style="-fx-background-color: #008a17; -fx-background-radius: 6px;" text="Ничего не требуется" textFill="WHITE" />
+                        <Button fx:id="buttoSend9" layoutX="95.0" layoutY="516.0" mnemonicParsing="false" onAction="#sendAns" prefHeight="46.0" prefWidth="178.0" style="-fx-background-color: #008a17;" text="Отправить" textFill="WHITE" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</StackPane>
